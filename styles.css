@@ -11,7 +11,7 @@
     --main-white: #f0f0f0;
     --main-red: #fbfbfb;
     --main-blue: #45567d;
-    --main-gray: #303841;
+    --main-gray: #1f1f1f;
 }
 
 html {
@@ -37,9 +37,9 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 0px;
+    box-shadow: rgba(19, 11, 11, 0.4) 10px 10px 10px;
     z-index: 10;
-    background: linear-gradient(45deg, rgb(39, 2, 2), var(--main-red));
+    background: linear-gradient(45deg, rgb(0, 0, 0), var(--main-red));
     unicode-bidi: isolate;
 }
 
@@ -63,6 +63,22 @@ li {
     font-size: 2.2rem;
     padding: 2rem;
     color: #1f1f1f;
+    border-radius: 45px;
+    transition: background 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -ms-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+}
+
+.nav-list a:hover {
+    background: #000406;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
 }
 
 a {
@@ -84,8 +100,12 @@ a {
     width: 100%;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    background-image: linear-gradient(62deg, rgb(58, 61, 64) 0%, rgb(24, 23, 25) 100%);
+    background-image: url("src/6617406.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 section {
     display: block;
@@ -97,6 +117,19 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
+h1:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 h1, h2 {
@@ -109,8 +142,24 @@ h1, h2 {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: #ffd5d5;
+    transition: all 0.5s ease-in-out;
 }
+
+/* Efek transisi gradasi saat hover */
+.welcome-section > p:hover {
+    background-image: linear-gradient(90deg, #ff7eb3, #ffffff, #ff7eb3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* font-weight: bold; */
+    font-style: italic;
+    background-size: 200% auto;
+    background-position: center;
+}
+
+
+
 
 p {
     display: block;
@@ -125,7 +174,7 @@ p {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: linear-gradient(#005386, #ffffff);
 }
 
 .projects-section-header {
@@ -175,12 +224,25 @@ img {
 .code {
     color: var(--main-gray);
     transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
 }
 
 .btn-show-all {
     font-size: 2rem;
     background: var(--main-gray);
     transition: background 0.3s ease-out;
+    -webkit-transition: background 0.3s ease-out;
+    -moz-transition: background 0.3s ease-out;
+    -ms-transition: background 0.3s ease-out;
+    -o-transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: #fefefe;
+    color: black;
 }
 
 .btn {
@@ -221,6 +283,7 @@ img {
 
 .contact-section-header > h2 {
     font-size: 6rem;
+    margin: 0;
 }
 
 .contact-section-header > p {
@@ -228,8 +291,7 @@ img {
 }
 
 .contact-links {
-    display: flex
-;
+    display: flex;
     justify-content: center;
     width: 100%;
     max-width: 980px;
@@ -238,15 +300,19 @@ img {
 }
 
 .contact-details {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
-    transition-property: transform;
-    transition-behavior: normal;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-
+    transition: transform 0.3s ease-out;
 }
+
+.contact-details:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
 
 i {
     font-style: italic;
